@@ -15,9 +15,54 @@ button {
     font-size: 16px;
 }
 
+/* General card styles */
+.card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out;
+}
+
+.card-button:active {
+    transform: translateY(2px);
+}
+
+/* Chance card specific styles */
+#draw-chance {
+    background-color: #007bff; /* Blue color for Chance cards */
+}
+
+#draw-chance:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Community Chest card specific styles */
+#draw-community {
+    background-color: #ff6f61; /* Orange color for Community Chest cards */
+}
+
+#draw-community:hover {
+    background-color: #cc5a4e; /* Darker orange on hover */
+}
+
+/* Card display area */
 #card-display {
     margin-top: 20px;
     padding: 20px;
-    border: 1px solid #000;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
     min-height: 100px;
+    font-size: 18px;
+    line-height: 1.5;
 }
