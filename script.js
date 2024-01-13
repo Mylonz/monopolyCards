@@ -1,3 +1,4 @@
+// This array contains a list of messages representing chance cards in a game.
 const chanceCards = [
     "Market Boom! Your stock investments paid off. Collect $2.5 million from the bank.",
     "Speeding Fine! You've been caught speeding around the board. Pay $1 million in fines.",
@@ -12,6 +13,7 @@ const chanceCards = [
     // ... add any additional card descriptions here
 ];
 
+// This array contains a list of messages representing community chest cards in a game.
 const communityChestCards = [
     "Community Spirit! You organized a car wash fundraiser for the local fire brigade. Collect $50k from the bank.",
     "Warm Hearts, Warm Paws! Your knitting club made cozy blankets for the animal shelter. Advance to Go and collect $200k.",
@@ -26,16 +28,23 @@ const communityChestCards = [
     // ... add any additional card descriptions here
 ];
 
+/**
+ * Draws a random card from the provided card array.
+ * @param {Array} cardArray - An array of card messages from which to draw.
+ * @return {string} - The message from the randomly selected card.
+ */
 function drawCard(cardArray) {
     const randomIndex = Math.floor(Math.random() * cardArray.length);
     return cardArray[randomIndex];
 }
 
+// Event listener for drawing a chance card. It updates the card display with the drawn card's message.
 document.getElementById('draw-chance').addEventListener('click', function() {
     const cardText = drawCard(chanceCards);
     document.getElementById('card-display').textContent = cardText;
 });
 
+// Event listener for drawing a community chest card. It updates the card display with the drawn card's message.
 document.getElementById('draw-community').addEventListener('click', function() {
     const cardText = drawCard(communityChestCards);
     document.getElementById('card-display').textContent = cardText;
