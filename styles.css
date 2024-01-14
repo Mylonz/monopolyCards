@@ -36,20 +36,20 @@ button {
 }
 
 /* Chance card specific styles */
-#draw-chance {
+#draw-community {
     background-color: #007bff; /* Blue color for Chance cards */
 }
 
-#draw-chance:hover {
+#draw-community:hover {
     background-color: #0056b3; /* Darker blue on hover */
 }
 
 /* Community Chest card specific styles */
-#draw-community {
+#draw-chance {
     background-color: #ff6f61; /* Orange color for Community Chest cards */
 }
 
-#draw-community:hover {
+#draw-chance:hover {
     background-color: #cc5a4e; /* Darker orange on hover */
 }
 
