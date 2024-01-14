@@ -38,14 +38,30 @@ function drawCard(cardArray) {
     return cardArray[randomIndex];
 }
 
-// Event listener for drawing a chance card. It updates the card display with the drawn card's message.
+// // Event listener for drawing a chance card. It updates the card display with the drawn card's message.
+// document.getElementById('draw-chance').addEventListener('click', function() {
+//     const cardText = drawCard(chanceCards);
+//     document.getElementById('card-display').textContent = cardText;
+// });
+
+// // Event listener for drawing a community chest card. It updates the card display with the drawn card's message.
+// document.getElementById('draw-community').addEventListener('click', function() {
+//     const cardText = drawCard(communityChestCards);
+//     document.getElementById('card-display').textContent = cardText;
+// });
+
+// Event listener for drawing a chance card. It updates the card display with the drawn card's message and border color.
 document.getElementById('draw-chance').addEventListener('click', function() {
     const cardText = drawCard(chanceCards);
-    document.getElementById('card-display').textContent = cardText;
+    const cardDisplay = document.getElementById('card-display');
+    cardDisplay.textContent = cardText;
+    cardDisplay.style.borderColor = '#007bff'; // Blue color for Chance cards
 });
 
-// Event listener for drawing a community chest card. It updates the card display with the drawn card's message.
+// Event listener for drawing a community chest card. It updates the card display with the drawn card's message and border color.
 document.getElementById('draw-community').addEventListener('click', function() {
     const cardText = drawCard(communityChestCards);
-    document.getElementById('card-display').textContent = cardText;
+    const cardDisplay = document.getElementById('card-display');
+    cardDisplay.textContent = cardText;
+    cardDisplay.style.borderColor = '#ff6f61'; // Orange color for Community Chest cards
 });
