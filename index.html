@@ -1,15 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monopoly Card Companion</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Flip Image to Text Box</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <button id="draw-chance" class="card-button">Draw Chance Card</button>
-    <button id="draw-community" class="card-button">Draw Community Chest Card</button>
-    <div id="card-display"></div>
-    <script src="script.js"></script>
+
+<div class="chance-card-flip-box">
+  <div class="chance-card-flip-box-inner">
+    <div class="chance-card-front">
+      <img src="images/chance-card-image.png" alt="Chance" style="width:300px;height:200px">
+    </div>
+    <div id="chance-card-back">
+      <h2>Chance ?</h2>
+        <div class="card-instructions">
+            <!-- Chance card instructions will go here -->
+            <p>What an amazing city</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<!-- <script src="script.js"></script> -->
 </body>
 </html>

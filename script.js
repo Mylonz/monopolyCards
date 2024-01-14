@@ -51,17 +51,20 @@ function drawCard(cardArray) {
 // });
 
 // Event listener for drawing a chance card. It updates the card display with the drawn card's message and border color.
-document.getElementById('draw-chance').addEventListener('click', function() {
-    const cardText = drawCard(chanceCards);
-    const cardDisplay = document.getElementById('card-display');
-    cardDisplay.textContent = cardText;
-    cardDisplay.style.borderColor = '#007bff'; // Blue color for Chance cards
-});
+document.addEventListener('DOMContentLoaded', function() {
+    // Event listener for the Draw Chance button
+    document.getElementById('chance-card-flip-box').addEventListener('click', function() {
+        var chanceCard = document.getElementById('chance-card-back');
+        var cardMessage = drawCard(chanceCards); // Draw a random chance card message
+        chanceCard.querySelector('.card-instructions').textContent = cardMessage;
+        chanceCard.classList.add('flipped');
+    });
 
-// Event listener for drawing a community chest card. It updates the card display with the drawn card's message and border color.
-document.getElementById('draw-community').addEventListener('click', function() {
-    const cardText = drawCard(communityChestCards);
-    const cardDisplay = document.getElementById('card-display');
-    cardDisplay.textContent = cardText;
-    cardDisplay.style.borderColor = '#ff6f61'; // Orange color for Community Chest cards
+    // // Event listener for the Draw Community Chest button
+    // document.getElementById('draw-community').addEventListener('click', function() {
+    //     var communityCard = document.getElementById('community-card');
+    //     var cardMessage = drawCard(communityChestCards); // Draw a random community chest card message
+    //     communityCard.querySelector('.card-instructions').textContent = cardMessage;
+    //     communityCard.classList.add('flipped');
+    // });
 });
