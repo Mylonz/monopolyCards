@@ -1,15 +1,35 @@
 // This array contains a list of messages representing chance cards in a game.
+// const chanceCards = [
+//     "Market Boom! Your stock investments paid off. Collect $2.5 million from the bank.",
+//     "Speeding Fine! You've been caught speeding around the board. Pay $1 million in fines.",
+//     "Property Tax Rebate! A clerical error in your favor has reduced your taxes. Collect $1.5 million from the bank.",
+//     "Insurance Maturity! Your property insurance matures. Collect $1 million from the bank.",
+//     "Bank Dividends! The bank pays you dividends of $2.25 million.",
+//     "Elected Chairman of the Board! Pay each player $500,000 for your campaign expenses.",
+//     "Advance to Go! Collect your salary of $2 million as you pass.",
+//     "Get Out of Jail Free! This card may be kept until needed or sold.",
+//     "Go Back Three Spaces! Sometimes it's good to look back. Move back and follow the instructions on the space.",
+//     "Roadworks! Pay $1.25 million for repairs on all your properties."
+//     // ... add any additional card descriptions here
+// ];
+
 const chanceCards = [
-    "Market Boom! Your stock investments paid off. Collect $2.5 million from the bank.",
-    "Speeding Fine! You've been caught speeding around the board. Pay $1 million in fines.",
-    "Property Tax Rebate! A clerical error in your favor has reduced your taxes. Collect $1.5 million from the bank.",
-    "Insurance Maturity! Your property insurance matures. Collect $1 million from the bank.",
-    "Bank Dividends! The bank pays you dividends of $2.25 million.",
-    "Elected Chairman of the Board! Pay each player $500,000 for your campaign expenses.",
-    "Advance to Go! Collect your salary of $2 million as you pass.",
-    "Get Out of Jail Free! This card may be kept until needed or sold.",
-    "Go Back Three Spaces! Sometimes it's good to look back. Move back and follow the instructions on the space.",
-    "Roadworks! Pay $1.25 million for repairs on all your properties."
+    "Sheep Shearing Success! Your wool sells at a top price at the auction. Collect $2.5 million from the bank.",
+    "Jandal Fine! You've been fined for not wearing proper footwear in public. Pay $1 million.",
+    "Rugby Win! Your team takes the championship. Collect $1.5 million in sponsorship deals.",
+    "Bungee Jump Bonus! Your daring jump attracts a crowd, and you land a TV spot. Collect $1 million.",
+    "Kiwi Fruit Boom! Your kiwifruit orchard has a bumper crop. Bank pays you $2.25 million.",
+    "Appointed as Wellington's Welly Boot Tossing Champ! Pay each player $500,000 for your victory party.",
+    "Advance to Cape Reinga! Collect your travel vlog earnings of $2 million as you pass.",
+    "Find a Moa Feather! It's incredibly rare. You may keep this card for good luck or auction it.",
+    "Caught in a Timewarp at Weta Workshop! Go back three spaces and encounter Middle-earth.",
+    "Pavlova Debate! Your argument that it's a Kiwi creation costs you. Pay $1.25 million in legal fees.",
+    "Lord of the Rings Tour! You guide a celebrity tour and earn $2 million.",
+    "All Blacks Autograph! You sell a signed rugby ball for a tidy profit. Collect $750,000.",
+    "Win a Tiki Tour! You win a local radio contest and get a free holiday. Skip ahead to the next unowned property.",
+    "Hobbiton Garden Party! You host a shindig that's the talk of the Shire. Pay $1 million for catering.",
+    "L&P Overload! You bought too much of the good stuff. Pay $500,000 for a dentist visit.",
+    "Southern Lights Spectacle! Your photo of the Aurora Australis goes viral. Collect $1.25 million in ad revenue."
     // ... add any additional card descriptions here
 ];
 
