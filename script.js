@@ -34,7 +34,7 @@ const chanceCards = [
 ];
 
 // This array contains a list of messages representing community chest cards in a game.
-const communityChestCards = [
+const communityChestCardsold = [
     "Community Spirit! You organized a car wash fundraiser for the local fire brigade. Collect $50k from the bank.",
     "Warm Hearts, Warm Paws! Your knitting club made cozy blankets for the animal shelter. Advance to Go and collect $200k.",
     "Neighborhood Hero! You volunteered for the beach cleanup. Receive a thank you gift of $100k.",
@@ -45,6 +45,26 @@ const communityChestCards = [
     "Green Thumb! Your community garden won an award. Collect $75k for your contribution.",
     "Charity Concert! You performed at a charity concert and raised money for a good cause. Collect $100k.",
     "Community Builder! You volunteered to help build a playground. The community thanks you with $150k."
+    // ... add any additional card descriptions here
+];
+
+const communityChestCards = [
+    "Flat White Spill! You accidentally spill coffee on a celebrity. Pay $500,000 in dry cleaning bills.",
+    "Possum in the House! It ate through the wiring. Pay $750,000 for electric repairs.",
+    "DIY Disaster! Your attempt to fix the plumbing floods your property. Pay $1 million in damages.",
+    "Marmite Mishap! Your viral video about running out of Marmite earns you $1.5 million in ad revenue.",
+    "Unexpected Heiress! A distant relative leaves you a fortune in sheep. Herd your way to the bank to collect $2 million.",
+    "Gumboot Day Champion! Your impressive throw wins you the grand prize. Collect $500,000.",
+    "Haka Performance! Your dance moves impress a talent scout. Collect $1 million for your new gig.",
+    "Fush and Chups Feast! Your seafood restaurant is a hit. Collect $2.25 million from happy customers.",
+    "Win the Great Kiwi Bake Off! Your pavlova is a national hit. Collect $1 million and a year's supply of whipped cream.",
+    "Meteorite Discovery! You find a space rock in your backyard. Collect $2.5 million from the museum.",
+    "Lost Tourists! You help a group of lost hobbits find their way. They pay you $750,000 for the guided tour.",
+    "Giant Weta Encounter! Your photo with the giant insect goes viral. Collect $1.25 million in licensing fees.",
+    "Best Pie Award! Your mince and cheese pie wins a national contest. Collect $500,000 and a trophy.",
+    "Geothermal Spa Day! You discover a hot spring on your property. Charge for entry and collect $1.5 million.",
+    "Unexpected Earthquake! Your bungee cord snaps (safely). The video goes viral, and you collect $1 million in views.",
+    "Fairy Bread Comeback! Your nostalgic treat becomes a trendy dessert. Collect $2 million from a major food chain."
     // ... add any additional card descriptions here
 ];
 
