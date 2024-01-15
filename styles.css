@@ -5,6 +5,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f7f7f7;
+    flex-direction: column; /* Align items vertically */
 }
 
 .card-container {
@@ -33,6 +34,21 @@ body {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
+}
+
+.card-front,
+.card-back {
+    /* ... other styles ... */
+
+    /* Centering text horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* Ensure the text container takes up the full size of the card */
+    width: 100%;
+    height: 100%;
 }
 
 .card-front {
