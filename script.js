@@ -1,5 +1,5 @@
 // This array contains a list of messages representing chance cards in a game.
-const chanceCards = [
+const chanceCardsOld = [
     "Market Boom! Your stock investments paid off. Collect $2.5 million from the bank.",
     "Speeding Fine! You've been caught speeding around the board. Pay $1 million in fines.",
     "Property Tax Rebate! A clerical error in your favor has reduced your taxes. Collect $1.5 million from the bank.",
@@ -14,7 +14,7 @@ const chanceCards = [
 ];
 
 // This array contains a list of messages representing community chest cards in a game.
-const communityChestCards = [
+const communityChestCardsOld = [
     "Community Spirit! You organized a car wash fundraiser for the local fire brigade. Collect $50k from the bank.",
     "Warm Hearts, Warm Paws! Your knitting club made cozy blankets for the animal shelter. Advance to Go and collect $200k.",
     "Neighborhood Hero! You volunteered for the beach cleanup. Receive a thank you gift of $100k.",
@@ -27,6 +27,8 @@ const communityChestCards = [
     "Community Builder! You volunteered to help build a playground. The community thanks you with $150k."
     // ... add any additional card descriptions here
 ];
+
+
 
 // Function to shuffle an array
 function shuffle(array) {
