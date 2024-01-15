@@ -77,6 +77,15 @@ function flipCard(cardElement, cardArray) {
 
     // Flip the card
     cardElement.classList.toggle('flipped');
+    // Create a new instance of SpeechSynthesisUtterance
+  var utterance = new SpeechSynthesisUtterance(cardArray[0]);
+
+  // Optionally set some properties
+  utterance.pitch = 1; // Range between 0 and 2
+  utterance.rate = 1; // Range between 0.1 (slowest) and 10 (fastest)
+
+  // Speak the text
+  window.speechSynthesis.speak(utterance);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
