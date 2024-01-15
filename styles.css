@@ -18,6 +18,8 @@ body {
     height: 300px; /* Adjust as needed */
     transform-style: preserve-3d;
     transition: transform 0.6s;
+    margin-top: 15px; /* Adjust the value for the space above the card */
+    margin-bottom: 15px; /* Adjust the value for the space below the card */
 }
 
 .card-inner {
@@ -51,7 +53,8 @@ body {
     border-radius: 10px;
 }
 
-.card-front,
+.card-front,margin-top: 15px; /* Adjust the value for the space above the card */
+    margin-bottom: 15px; /* Adjust the value for the space below the card */
 .card-back {
     /* Centering text horizontally and vertically */
     display: flex;
