@@ -69,23 +69,24 @@ function flipCard(cardElement, cardArray) {
     if (cardElement.classList.contains('flipped')) {
         // Card is already flipped, move instruction to the end of the array
         cardArray.push(cardArray.shift());
+        cardElement.classList.toggle('flipped');
     } else {
         // Card is not flipped, show the next instruction
         const cardBack = cardElement.querySelector('.card-back p');
         cardBack.textContent = cardArray[0];
+        cardElement.classList.toggle('flipped');
+        // Create a new instance of SpeechSynthesisUtterance
+        var utterance = new SpeechSynthesisUtterance(cardArray[0]);
+
+        // Optionally set some properties
+        utterance.pitch = 1; // Range between 0 and 2
+        utterance.rate = 1; // Range between 0.1 (slowest) and 10 (fastest)
+
+        // Speak the text
+        window.speechSynthesis.speak(utterance);
     }
 
-    // Flip the card
-    cardElement.classList.toggle('flipped');
-    // Create a new instance of SpeechSynthesisUtterance
-  var utterance = new SpeechSynthesisUtterance(cardArray[0]);
 
-  // Optionally set some properties
-  utterance.pitch = 1; // Range between 0 and 2
-  utterance.rate = 1; // Range between 0.1 (slowest) and 10 (fastest)
-
-  // Speak the text
-  window.speechSynthesis.speak(utterance);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
