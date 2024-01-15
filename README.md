@@ -1,6 +1,6 @@
 # Monopoly Card Companion
 
-Monopoly Card Companion is a digital tool designed to replace the physical community chest and chance cards in the classic board game of Monopoly. This application brings a new twist to the game by providing a randomized draw of cards from a digital deck, enhancing the gameplay experience and ensuring that cards are easily accessible and never lost or damaged.
+Monopoly Card Companion is a digital tool designed help out when you have lost cards the physical community chest and chance cards in the classic board game of Monopoly. This application brings a new twist to the game by providing a randomized draw of cards from a digital deck, enhancing the gameplay experience and ensuring that cards are easily accessible and never lost or damaged.
 
 ## Getting Started
 
