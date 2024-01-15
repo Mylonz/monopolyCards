@@ -3,9 +3,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
+    margin: 10px;
     background-color: #f7f7f7;
-    flex-direction: column; /* Align items vertically */
 }
 
 .card-container {
@@ -14,12 +13,21 @@ body {
 }
 
 .card {
-    width: 200px; /* Adjust as needed */
+    flex-direction: row; /* Align items vertically */
+    width: 200px; /*/* Adjust as needed */
     height: 300px; /* Adjust as needed */
     transform-style: preserve-3d;
     transition: transform 0.6s;
     margin-top: 15px; /* Adjust the value for the space above the card */
     margin-bottom: 15px; /* Adjust the value for the space below the card */
+}
+
+/* Media query for screens with a max-width of 768px (common breakpoint for tablets and mobile devices) */
+@media screen and (max-width: 768px) {
+    .card {
+        /* Vertical layout styles for smaller screens */
+        flex-direction: column;
+    }
 }
 
 .card-inner {
