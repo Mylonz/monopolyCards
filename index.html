@@ -1,25 +1,42 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <title>Flip Image to Text Box</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monopoly Card Game</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<div class="chance-card-flip-box">
-  <div class="chance-card-flip-box-inner">
-    <div class="chance-card-front">
-      <img src="images/chance-card-image.png" alt="Chance" style="width:300px;height:200px">
-    </div>
-    <div id="chance-card-back">
-      <h2>Chance ?</h2>
-        <div class="card-instructions">
-            <!-- Chance card instructions will go here -->
-            <p>What an amazing city</p>
+<div class="card-container">
+    <div class="card" id="chance-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <!-- Image of the back side of the Chance card -->
+                <img src="images/chance-card-image.png" alt="Chance Card Back" height="220px" >
+            </div>
+            <div class="card-back">
+                <!-- Instructions will be dynamically inserted here -->
+            </div>
         </div>
     </div>
-  </div>
 </div>
 
-<!-- <script src="script.js"></script> -->
+<div class="card-container">
+    <div class="card" id="community-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <!-- Image of the back side of the Community Chest card -->
+                <img src="images/community-chest-card-image.png" alt="Community Chest Card Back" height="220px">
+            </div>
+            <div class="card-back">
+                <!-- Instructions will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>
