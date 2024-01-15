@@ -10,7 +10,7 @@ body {
 
 .card-container {
     perspective: 1000px;
-    margin: 20px;
+    margin: 18px;
 }
 
 .card {
