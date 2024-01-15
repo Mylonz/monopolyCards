@@ -43,7 +43,7 @@ function flipCard(cardElement, cardArray) {
         cardArray.push(cardArray.shift());
     } else {
         // Card is not flipped, show the next instruction
-        const cardBack = cardElement.querySelector('.card-back');
+        const cardBack = cardElement.querySelector('.card-back p');
         cardBack.textContent = cardArray[0];
     }
 
