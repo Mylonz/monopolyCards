@@ -29,7 +29,7 @@ const chanceCards = [
     "Lord of the Rings Tour! You guide a celebrity tour and earn $2 million.",
     "All Blacks Autograph! You sell a signed rugby ball for a tidy profit. Collect $750,000.",
     "Win a Tiki Tour! You win a local radio contest and get a free holiday. Skip ahead to the next unowned property.",
-    "Hobbiton Birthday Party! 'Kolokythakia tis Skaras' DIY fireworks go astray while Gandalf is away, vege garden destoryed. Pay $1 million to restore Jacinda's Dad's prize Zuchinni patch.",
+    "Hobbiton Birthday Party! DIY fireworks go astray while Gandalf is away, garden destroyed. Pay $1 million to restore Jacinda's Dad's prize Zuchinni patch.",
     "L&P Overload! You bought too much of the good stuff. Pay $500,000 for a dentist visit.",
     "Southern Lights Spectacle! Your photo of the Aurora Australis goes viral. Collect $1.25 million in ad revenue."
     // ... add any additional card descriptions here
