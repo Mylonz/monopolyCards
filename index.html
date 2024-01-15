@@ -3,16 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monopoly Card Drawer</title>
+    <title>Monopoly Card Game</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
-        <h1>Monopoly Card Drawer</h1>
-        <button id="draw-chance">Draw Chance Card</button>
-        <button id="draw-community">Draw Community Chest Card</button>
-        <div id="card-display"></div>
+
+<div class="card-container">
+    <div class="card" id="chance-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <!-- Image of the back side of the Chance card -->
+                <img src="images/chance-card-image.png" alt="Chance Card Back" height="220px" >
+            </div>
+            <div class="card-back">
+                <!-- Instructions will be dynamically inserted here -->
+            </div>
+        </div>
     </div>
-    <script src="script.js"></script>
+</div>
+
+<div class="card-container">
+    <div class="card" id="community-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <!-- Image of the back side of the Community Chest card -->
+                <img src="images/community-chest-card-image.png" alt="Community Chest Card Back" height="220px">
+            </div>
+            <div class="card-back">
+                <!-- Instructions will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
 </body>
 </html>

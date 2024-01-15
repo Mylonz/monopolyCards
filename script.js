@@ -28,24 +28,43 @@ const communityChestCards = [
     // ... add any additional card descriptions here
 ];
 
-/**
- * Draws a random card from the provided card array.
- * @param {Array} cardArray - An array of card messages from which to draw.
- * @return {string} - The message from the randomly selected card.
- */
-function drawCard(cardArray) {
-    const randomIndex = Math.floor(Math.random() * cardArray.length);
-    return cardArray[randomIndex];
+// Function to shuffle an array
+function shuffle(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
 }
 
-// Event listener for drawing a chance card. It updates the card display with the drawn card's message.
-document.getElementById('draw-chance').addEventListener('click', function() {
-    const cardText = drawCard(chanceCards);
-    document.getElementById('card-display').textContent = cardText;
-});
+// Function to flip the card and show the next instruction
+function flipCard(cardElement, cardArray) {
+    if (cardElement.classList.contains('flipped')) {
+        // Card is already flipped, move instruction to the end of the array
+        cardArray.push(cardArray.shift());
+    } else {
+        // Card is not flipped, show the next instruction
+        const cardBack = cardElement.querySelector('.card-back');
+        cardBack.textContent = cardArray[0];
+    }
 
-// Event listener for drawing a community chest card. It updates the card display with the drawn card's message.
-document.getElementById('draw-community').addEventListener('click', function() {
-    const cardText = drawCard(communityChestCards);
-    document.getElementById('card-display').textContent = cardText;
+    // Flip the card
+    cardElement.classList.toggle('flipped');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Shuffle the card arrays when the page loads
+    shuffle(chanceCards);
+    shuffle(communityChestCards);
+
+    // Event listener for the Chance card click
+    const chanceCard = document.getElementById('chance-card');
+    chanceCard.addEventListener('click', function() {
+        flipCard(chanceCard, chanceCards);
+    });
+
+    // Event listener for the Community Chest card click
+    const communityCard = document.getElementById('community-card');
+    communityCard.addEventListener('click', function() {
+        flipCard(communityCard, communityChestCards);
+    });
 });
